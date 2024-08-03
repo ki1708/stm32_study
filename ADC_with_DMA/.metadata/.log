@@ -1,0 +1,304 @@
+!SESSION 2024-07-31 21:00:11.833 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-31 21:00:34.180
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-31 21:00:34.188
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-31 21:00:36.439
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-31 21:01:59.084
+!MESSAGE Indexed 'ADC_with_DMA' (54 sources, 125 headers) in 4.63 sec: 12,694 declarations; 87,726 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.002%)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2024-07-31 21:03:13.835
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1/3.0.0/artifacts.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:132)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:791)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:689)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:476)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:157)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:79)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:791)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:689)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:205)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:181)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:167)
+	at org.eclipse.equinox.internal.p2.engine.phases.Sizing.completePhase(Sizing.java:98)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.getSize(ProvUI.java:266)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.SizeComputingWizardPage$1.run(SizeComputingWizardPage.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.CancellationException: Request cancelled
+	at java.net.http/jdk.internal.net.http.MultiExchange.cancel(MultiExchange.java:278)
+	at java.net.http/jdk.internal.net.http.MultiExchange$CancelableRef.cancel(MultiExchange.java:193)
+	at java.net.http/jdk.internal.net.http.common.MinimalFuture.cancel(MinimalFuture.java:107)
+	at org.eclipse.ecf.provider.filetransfer.httpclientjava.HttpClientFileSystemBrowser.cancel(HttpClientFileSystemBrowser.java:193)
+	at org.eclipse.ecf.provider.filetransfer.httpclientjava.HttpClientFileSystemBrowser$HttpClientRemoteFileSystemRequest.cancel(HttpClientFileSystemBrowser.java:176)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.run(FileInfoReader.java:54)
+	... 1 more
+Caused by: java.io.IOException: Request cancelled
+	at java.net.http/jdk.internal.net.http.Http1Exchange.cancel(Http1Exchange.java:418)
+	at java.net.http/jdk.internal.net.http.Exchange.cancel(Exchange.java:220)
+	at java.net.http/jdk.internal.net.http.MultiExchange.cancel(MultiExchange.java:284)
+	... 6 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2024-07-31 21:03:13.835
+!MESSAGE Unable to read repository at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1/3.0.0/artifacts.xml.xz.
+!STACK 0
+java.util.concurrent.CancellationException: Request cancelled
+	at java.net.http/jdk.internal.net.http.MultiExchange.cancel(MultiExchange.java:278)
+	at java.net.http/jdk.internal.net.http.MultiExchange$CancelableRef.cancel(MultiExchange.java:193)
+	at java.net.http/jdk.internal.net.http.common.MinimalFuture.cancel(MinimalFuture.java:107)
+	at org.eclipse.ecf.provider.filetransfer.httpclientjava.HttpClientFileSystemBrowser.cancel(HttpClientFileSystemBrowser.java:193)
+	at org.eclipse.ecf.provider.filetransfer.httpclientjava.HttpClientFileSystemBrowser$HttpClientRemoteFileSystemRequest.cancel(HttpClientFileSystemBrowser.java:176)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.run(FileInfoReader.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Request cancelled
+	at java.net.http/jdk.internal.net.http.Http1Exchange.cancel(Http1Exchange.java:418)
+	at java.net.http/jdk.internal.net.http.Exchange.cancel(Exchange.java:220)
+	at java.net.http/jdk.internal.net.http.MultiExchange.cancel(MultiExchange.java:284)
+	... 6 more
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2024-07-31 21:08:14.463
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\ki170\AppData\Local\Temp\STM32CubeIDE_98c57a92-5314-4ebe-ad68-a472c50b5681
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2024-07-31 21:08:14.546
+!MESSAGE Exception saving preferences to: C:/ST/STM32CubeIDE_1.7.0/STM32CubeIDE/p2/org.eclipse.equinox.p2.engine/profileRegistry/STM32CubeIDE.profile/.data/.settings/org.eclipse.equinox.p2.artifact.repository.prefs.
+!STACK 0
+java.nio.file.AccessDeniedException: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\p2\org.eclipse.equinox.p2.engine\profileRegistry\STM32CubeIDE.profile\.data\.settings\org.eclipse.equinox.p2.artifact.repository.prefs
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:392)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:289)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1039)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.doSave(ProfilePreferences.java:141)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences$SaveJob.run(ProfilePreferences.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 2 0 2024-07-31 21:08:14.547
+!MESSAGE Exception saving profile preferences
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception saving preferences to: C:/ST/STM32CubeIDE_1.7.0/STM32CubeIDE/p2/org.eclipse.equinox.p2.engine/profileRegistry/STM32CubeIDE.profile/.data/.settings/org.eclipse.equinox.p2.artifact.repository.prefs.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:297)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1039)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.doSave(ProfilePreferences.java:141)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences$SaveJob.run(ProfilePreferences.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\p2\org.eclipse.equinox.p2.engine\profileRegistry\STM32CubeIDE.profile\.data\.settings\org.eclipse.equinox.p2.artifact.repository.prefs
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:392)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:289)
+	... 4 more
+!SESSION 2024-07-31 21:08:43.036 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-31 21:08:50.389
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-31 21:08:50.390
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-31 21:08:54.824
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-31 22:45:01.509
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-31 22:45:01.510
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-31 22:45:01.511
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-31 22:45:01.511
+!MESSAGE Existing sessions are:
+!SESSION 2024-07-31 23:00:56.244 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\ADC_with_DMA\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\ADC_with_DMA\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-31 23:01:04.809
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-31 23:01:04.810
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-31 23:01:09.009
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-31 23:01:13.587
+!MESSAGE Indexed 'ADC_with_DMA' (42 sources, 146 headers) in 3.94 sec: 17,895 declarations; 104,149 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.2%)
+!SESSION 2024-08-01 00:36:35.294 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\ADC_with_DMA\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\ADC_with_DMA\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-01 00:36:40.304
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-01 00:36:40.306
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-01 00:36:44.303
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-01 00:36:48.604
+!MESSAGE Indexed 'ADC_with_DMA' (42 sources, 146 headers) in 3.77 sec: 17,895 declarations; 104,149 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.2%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-01 00:47:44.494
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2024-08-01 00:47:44.495
+!MESSAGE Setup exceptions
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 00:53:36.486
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 00:53:36.487
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 00:53:36.488
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 00:53:36.488
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:30:57.987
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 7 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:30:57.988
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:30:57.989
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 7 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:30:57.989
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:45:50.969
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:45:50.970
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:45:50.971
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:45:50.972
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:18.182
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 16 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:18.183
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:18.184
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 16 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:18.185
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:39.778
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 17 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:39.779
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:39.780
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 17 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-01 01:46:39.780
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-01 02:06:31.543
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2024-08-01 02:06:31.543
+!MESSAGE Setup exceptions
+!SESSION 2024-08-02 18:43:08.197 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-02 18:43:24.647
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-02 18:43:24.655
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-02 18:43:30.586
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-02 19:04:26.923
+!MESSAGE Indexed 'ADC' (42 sources, 145 headers) in 4.23 sec: 17,892 declarations; 100,196 references; 5 unresolved inclusions; 1,645 syntax errors; 2,556 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-02 20:25:36.066
+!MESSAGE Indexed 'ADC' (32 sources, 132 headers) in 2.57 sec: 16,015 declarations; 92,975 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.22%)

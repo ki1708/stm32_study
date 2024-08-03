@@ -1,0 +1,42 @@
+02:20:39 **** Incremental Build of configuration Debug for project ADC_with_DMA ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:81:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   81 |         HAL_UART_Transmit(&huart1, p, len, 10);
+      |                                    ^
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:161:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  161 |         printf("adc_value 1 : %d\n", adc_value_1);
+      |         ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "usb_host.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:161:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  161 |         printf("adc_value 1 : %d\n", adc_value_1);
+      |         ^~~~~~
+../Core/Src/main.c:161:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "ADC_with_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\ADC_with_DMA\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_with_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_with_DMA.elf
+ 
+arm-none-eabi-size  ADC_with_DMA.elf 
+arm-none-eabi-objdump -h -S ADC_with_DMA.elf  > "ADC_with_DMA.list"
+   text	   data	    bss	    dec	    hex	filename
+  46144	    136	   4512	  50792	   c668	ADC_with_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_with_DMA.list
+ 
+
+02:20:40 Build Finished. 0 errors, 3 warnings. (took 1s.549ms)
+
