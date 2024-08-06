@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;delay/ADC_SCAN_DMA.ioc&apos; to &apos;delay.ioc&apos;" description="Rename resource &apos;ADC_SCAN_DMA.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ADC_SCAN_DMA.ioc" name="delay.ioc" stamp="1722957180574" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;delay/App/include/utils&apos; to &apos;utils.h&apos;" description="Rename resource &apos;utils&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="App/include/utils" name="utils.h" stamp="1722957448341" updateReferences="true"/>
+</session>

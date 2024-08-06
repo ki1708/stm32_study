@@ -1,0 +1,3 @@
+../App/src/adc.c:18:6:adcInit	8	static
+../App/src/adc.c:23:10:adcRead	0	static
+../App/src/adc.c:41:10:adcReadVoltage	8	static

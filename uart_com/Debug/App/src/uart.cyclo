@@ -1,0 +1,4 @@
+../App/src/uart.c:16:8:uartInit	1
+../App/src/uart.c:20:10:uartWrite	3
+../App/src/uart.c:46:10:uartAvailable	1
+../App/src/uart.c:52:10:uartRead	1

@@ -263,3 +263,133 @@ java.io.FileNotFoundException: C:\Users\ki170\Desktop\stm32workspace\ADC\Debug\A
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-08-03 01:55:32.398
 !MESSAGE Indexed 'ADC_SCAN_DMA' (37 sources, 139 headers) in 2.34 sec: 16,400 declarations; 95,765 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.21%)
+!SESSION 2024-08-03 12:38:43.319 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\ki170\Desktop\stm32workspace\ADC_SCAN_DMA\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\ki170\Desktop\stm32workspace\ADC_SCAN_DMA\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-03 12:38:58.742
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-03 12:38:58.749
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-03 12:39:04.727
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-03 12:39:09.333
+!MESSAGE Indexed 'ADC_SCAN_DMA' (37 sources, 139 headers) in 4.06 sec: 16,408 declarations; 95,902 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.21%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-08-03 12:45:17.923
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ki170\Desktop\stm32workspace\ADC_SCAN_DMA\Debug\ADC_SCAN_DMA.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-08-03 12:45:17.923
+!MESSAGE C:\Users\ki170\Desktop\stm32workspace\ADC_SCAN_DMA\Debug\ADC_SCAN_DMA.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ki170\Desktop\stm32workspace\ADC_SCAN_DMA\Debug\ADC_SCAN_DMA.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-07 00:01:43.472 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-07 00:01:59.939
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-07 00:01:59.948
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-07 00:02:07.505
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-08-07 00:07:40.160 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\ADC_with_DMA\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\ki170\Desktop\stm32workspace\ADC_with_DMA\ADC_with_DMA\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-07 00:07:50.786
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-07 00:07:50.787
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-07 00:07:54.641
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-07 00:08:00.615
+!MESSAGE Indexed 'ADC_with_DMA' (42 sources, 146 headers) in 4.42 sec: 17,898 declarations; 104,190 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.2%)
+!SESSION 2024-08-07 00:08:29.948 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\ki170\Desktop\stm32workspace\ADC_SCAN_DMA\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\ki170\Desktop\stm32workspace\ADC_SCAN_DMA\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-07 00:08:38.593
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-07 00:08:38.594
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-07 00:08:43.095
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-07 00:08:46.899
+!MESSAGE Indexed 'ADC_SCAN_DMA' (37 sources, 139 headers) in 3.41 sec: 16,409 declarations; 95,898 references; 1 unresolved inclusions; 93 syntax errors; 241 unresolved names (0.21%)
+!SESSION 2024-08-07 00:11:13.319 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-07 00:11:28.867
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-07 00:11:28.868
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-07 00:11:32.838
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-07 00:11:57.106
+!MESSAGE Indexed 'delay' (37 sources, 137 headers) in 2.4 sec: 16,403 declarations; 91,910 references; 7 unresolved inclusions; 1,642 syntax errors; 2,564 unresolved names (2.3%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-08-07 00:13:36.917
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-07 01:01:23.183
+!MESSAGE Indexed 'uart_com' (38 sources, 140 headers) in 2.03 sec: 16,422 declarations; 95,932 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-07 01:28:36.425
+!MESSAGE Indexed 'uart_com' (41 sources, 141 headers) in 2.26 sec: 16,469 declarations; 96,026 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.21%)

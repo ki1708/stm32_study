@@ -1,0 +1,10 @@
+00:28:38 **** Incremental Build of configuration Debug for project delay ****
+make -j12 all 
+arm-none-eabi-size  delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21428	     12	   2372	  23812	   5d04	delay.elf
+Finished building: default.size.stdout
+ 
+
+00:28:38 Build Finished. 0 errors, 0 warnings. (took 512ms)
+
