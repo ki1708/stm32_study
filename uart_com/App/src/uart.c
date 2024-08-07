@@ -31,14 +31,7 @@ uint32_t uartWrite(uint8_t ch, uint8_t *p_data, uint32_t length)
 				ret = length ;	// HAL_OK일 경우가 아니면 ret은 0으로 초기화된그대로,.
 			}
 			break;
-
 	}
-
-
-
-
-
-
 	return ret ;
 }
 
@@ -52,4 +45,25 @@ uint32_t uartAvailable(uint8_t ch)
 uint32_t uartRead(uint8_t ch)
 {
 
+}
+
+
+uint32_t uartPrintf(uint8_t ch ,const char *fmt, ... ) //가변인자를 사용한 형식화 출력함수, 프로그램만들때 매우 용이
+{
+	uint32_t ret = 0;
+
+	va_list arg ;
+	char print_buf[256];
+
+	va_start(arg,fmt);
+	int len;
+	len = vsnprintf(print_buf , 256, fmt, arg);
+	va_end(arg);
+
+	if (len > 0)
+	{
+		ret = uartWrite(ch,(uint8_t *)print_buf,len);
+	}
+
+	return ret;
 }

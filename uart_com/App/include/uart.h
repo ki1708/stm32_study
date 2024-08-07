@@ -16,6 +16,7 @@ bool 	 uartInit(void);
 uint32_t uartWrite(uint8_t ch, uint8_t *p_data, uint32_t length);
 uint32_t uartAvailable(uint8_t ch);
 uint32_t uartRead(uint8_t ch);
+uint32_t uartPrintf(uint8_t ch ,const char *fmt, ... );
 
 
 #endif /* INCLUDE_UART_H_ */

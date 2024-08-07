@@ -27,7 +27,13 @@ void apMain(void)
 		{
 			pre_time = millis();
 			HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-			uartWrite(_DEF_CH1, (uint8_t *)"test\n", 5);
+
+
+
+			//uartWrite(_DEF_CH1, (uint8_t *)"test\n", 5); // uart test code
+
+			//uartPrintf(_DEF_CH1,"test %d\n",millis() );	//uartprintf 구현 code
+			uartPrintf(_DEF_CH1,"adc_vol : %d.%d\n",(int)adc_vol, ((int)(adc_vol * 100)) %100 );	//uartprintf 구현 code + printf에서 float을 정수로 변경해서 출력
 		}
 
 

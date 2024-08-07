@@ -1,4 +1,5 @@
 ../App/src/uart.c:16:8:uartInit	0	static
 ../App/src/uart.c:20:10:uartWrite	8	static
-../App/src/uart.c:46:10:uartAvailable	0	static
-../App/src/uart.c:52:10:uartRead	0	static
+../App/src/uart.c:39:10:uartAvailable	0	static
+../App/src/uart.c:45:10:uartRead	0	static
+../App/src/uart.c:51:10:uartPrintf	276	static
