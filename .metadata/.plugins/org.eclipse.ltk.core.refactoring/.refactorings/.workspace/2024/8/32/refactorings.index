@@ -8,3 +8,7 @@
 1722960101621	Delete resource 'uart_com/delay Debug.launch'
 1722961743234	Delete resource 'uart_com/Debug/ADC_SCAN_DMA.list'
 1722961745605	Delete resource 'uart_com/Debug/ADC_SCAN_DMA.map'
+1723133503740	Delete resource 'uart_com'
+1723133521270	Delete resource 'ili9341_test/uart_com Debug.launch'
+1723136264831	Delete resource 'lcd_test'
+1723136272712	Delete resource 'DISCO-F429ZI_LCD_demo-e4d4cf43a2ca'

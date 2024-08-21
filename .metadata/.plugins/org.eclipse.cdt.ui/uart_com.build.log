@@ -1,10 +1,17 @@
-00:56:19 **** Incremental Build of configuration Debug for project uart_com ****
+23:48:08 **** Incremental Build of configuration Debug for project uart_com ****
 make -j12 all 
+arm-none-eabi-gcc "../App/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/ki170/Desktop/stm32workspace/uart_com/App" -I"C:/Users/ki170/Desktop/stm32workspace/uart_com/App/include" -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"App/ap.d" -MT"App/ap.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "App/ap.o"
+arm-none-eabi-gcc -o "uart_com.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ki170\Desktop\stm32workspace\uart_com\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uart_com.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: uart_com.elf
+ 
 arm-none-eabi-size  uart_com.elf 
+arm-none-eabi-objdump -h -S uart_com.elf  > "uart_com.list"
    text	   data	    bss	    dec	    hex	filename
-  17160	     92	   2700	  19952	   4df0	uart_com.elf
+  16536	     92	   2964	  19592	   4c88	uart_com.elf
 Finished building: default.size.stdout
  
+Finished building: uart_com.list
+ 
 
-00:56:20 Build Finished. 0 errors, 0 warnings. (took 463ms)
+23:48:09 Build Finished. 0 errors, 0 warnings. (took 1s.214ms)
 
