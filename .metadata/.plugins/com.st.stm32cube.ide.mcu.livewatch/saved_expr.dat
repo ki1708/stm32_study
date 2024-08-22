@@ -1,2 +1,3 @@
-adc_data
-adc_vol
+q_in
+q_out
+q_buf
