@@ -6,16 +6,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../App/src/adc.c \
+../App/src/cli.c \
 ../App/src/uart.c \
 ../App/src/utils.c 
 
 OBJS += \
 ./App/src/adc.o \
+./App/src/cli.o \
 ./App/src/uart.o \
 ./App/src/utils.o 
 
 C_DEPS += \
 ./App/src/adc.d \
+./App/src/cli.d \
 ./App/src/uart.d \
 ./App/src/utils.d 
 
@@ -27,7 +30,7 @@ App/src/%.o App/src/%.su App/src/%.cyclo: ../App/src/%.c App/src/subdir.mk
 clean: clean-App-2f-src
 
 clean-App-2f-src:
-	-$(RM) ./App/src/adc.cyclo ./App/src/adc.d ./App/src/adc.o ./App/src/adc.su ./App/src/uart.cyclo ./App/src/uart.d ./App/src/uart.o ./App/src/uart.su ./App/src/utils.cyclo ./App/src/utils.d ./App/src/utils.o ./App/src/utils.su
+	-$(RM) ./App/src/adc.cyclo ./App/src/adc.d ./App/src/adc.o ./App/src/adc.su ./App/src/cli.cyclo ./App/src/cli.d ./App/src/cli.o ./App/src/cli.su ./App/src/uart.cyclo ./App/src/uart.d ./App/src/uart.o ./App/src/uart.su ./App/src/utils.cyclo ./App/src/utils.d ./App/src/utils.o ./App/src/utils.su
 
 .PHONY: clean-App-2f-src
 

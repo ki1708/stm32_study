@@ -1,0 +1,5 @@
+../App/src/cli.c:48:6:cliAdd	2
+../App/src/cli.c:37:6:cliInit	2
+../App/src/cli.c:74:6:cliPrintf	1
+../App/src/cli.c:61:6:cliHelp	2
+../App/src/cli.c:83:6:cliMain	8

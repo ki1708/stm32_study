@@ -13,6 +13,9 @@
 #include <stdint.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include "string.h"
+#include "stdlib.h"
+#include "cli.h"
 
 
 #include "main.h"

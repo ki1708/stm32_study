@@ -1,5 +1,6 @@
 "./App/ap.o"
 "./App/src/adc.o"
+"./App/src/cli.o"
 "./App/src/uart.o"
 "./App/src/utils.o"
 "./Core/Src/main.o"

@@ -8,6 +8,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC\ Debug/activeLaunchTarget=n
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_SCAN_DMA\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_SCAN_DMA\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CLI\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CLI\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:delay\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:lcd_test\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:lv_port_stm32f429_disco\ Debug/activeLaunchMode=run
