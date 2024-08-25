@@ -41,11 +41,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_macro  0002a408  00000000  00000000  0003aeda  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_line   000283b1  00000000  00000000  000652e2  2**0
+ 19 .debug_line   000283b3  00000000  00000000  000652e2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_str    0010046f  00000000  00000000  0008d693  2**0
+ 20 .debug_str    0010046f  00000000  00000000  0008d695  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .comment      00000043  00000000  00000000  0018db02  2**0
+ 21 .comment      00000043  00000000  00000000  0018db04  2**0
                   CONTENTS, READONLY
  22 .debug_frame  0000452c  00000000  00000000  0018db48  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -409,9 +409,9 @@ Disassembly of section .text:
  800057e:	bf00      	nop
 
 08000580 <apInit>:
-#include "ap.h"
-//uint32_t adc_vol = 0 ;
+//extern UART_HandleTypeDef huart1; // main에서 선언된것을 여기에서 쓰도록 extern
 float adc_vol = 0 ;
+
 
 void apInit(void)
 {
@@ -429,10 +429,14 @@ void apMain(void)
 {
  800058c:	b510      	push	{r4, lr}
 	uint32_t pre_time ;
+	//uint32_t pre_time_2 ;
 
 	pre_time = millis();
  800058e:	f000 f8a3 	bl	80006d8 <millis>
  8000592:	4604      	mov	r4, r0
+	//uint8_t temp_index = 0;
+
+
 	while(1)
 	{
 		if (millis() - pre_time >= 500)	// 논블락킹 코드
@@ -440,11 +444,11 @@ void apMain(void)
  8000598:	1b03      	subs	r3, r0, r4
  800059a:	f5b3 7ffa 	cmp.w	r3, #500	@ 0x1f4
  800059e:	d20e      	bcs.n	80005be <apMain+0x32>
-			pre_time = millis();
-			HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-			//uartPrintf(_DEF_CH1, "dma cndtr : %d\n" ,huart1.hdmarx->Instance->NDTR ); // huart1 을통해서 dma 핸들러로 진입.
-
+			//uartPrintf (_DEF_CH1,"q_remain : %d\n", uartAvailable(_DEF_CH1) ) ;
 		}
+
+
+
 		if(uartAvailable(_DEF_CH1) > 0) // 수신된 데이터있음.
  80005a0:	2000      	movs	r0, #0
  80005a2:	f000 f845 	bl	8000630 <uartAvailable>
