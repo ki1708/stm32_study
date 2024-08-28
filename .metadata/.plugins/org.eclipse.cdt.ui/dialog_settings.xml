@@ -2,16 +2,19 @@
 <section name="Workbench">
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
-	<item key="org.eclipse.cdt.uiformatter_page.white_space.c_view.inner" value="16"/>
+	<item key="org.eclipse.cdt.uiformatter_page.white_space.c_view.inner" value="29"/>
 	<item key="org.eclipse.cdt.uiformatter_page.white_space_tab_page.node" value="0"/>
-	<item key="org.eclipse.cdt.uiformatter_page.line_wrapping_tab_page.last_category_index" value="1"/>
-	<item key="formatter_page.modify_dialog_tab_page.last_focus_index" value="3"/>
-	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.last_focus" value="3"/>
+	<item key="org.eclipse.cdt.uiformatter_page.line_wrapping_tab_page.last_category_index" value="3"/>
+	<item key="formatter_page.modify_dialog_tab_page.last_focus_index" value="8"/>
+	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.last_focus" value="5"/>
 	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_width" value="1113"/>
 	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_height" value="890"/>
 	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_x" value="598"/>
 	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_y" value="0"/>
 	<item key="org.eclipse.cdt.ui.codeformatter.create_profile_dialog.open_edit" value="true"/>
+	<item key="org.eclipse.cdt.uiformatter_page.white_space.c_view.option" value="21"/>
+	<item key="org.eclipse.cdt.ui.formatter_page.show_invisible_characters" value="false"/>
+	<item key="org.eclipse.cdt.uiformatter_page.white_space_tab_page.view" value="false"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
@@ -47,6 +50,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="askReindex.detail" value="0"/>
+		<item key="askReindex" value="true"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
 		<item key="DIALOG_X_ORIGIN" value="769"/>

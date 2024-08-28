@@ -1224,3 +1224,111 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-25 22:15:03.130
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-08-26 23:38:40.224 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-26 23:38:55.791
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-26 23:38:55.797
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-26 23:39:01.525
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-08-27 23:37:41.388 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-27 23:37:59.430
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-27 23:37:59.438
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-27 23:38:06.836
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-27 23:50:10.538
+!MESSAGE Indexed 'CLI2' (43 sources, 141 headers) in 3.87 sec: 16,994 declarations; 93,481 references; 11 unresolved inclusions; 1,642 syntax errors; 3,447 unresolved names (3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-27 23:50:27.812
+!MESSAGE Indexed 'swtimer' (43 sources, 141 headers) in 2.22 sec: 16,994 declarations; 93,481 references; 11 unresolved inclusions; 1,642 syntax errors; 3,447 unresolved names (3%)
+!SESSION 2024-08-28 22:16:53.586 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-28 22:17:08.799
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-28 22:17:08.806
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-28 22:17:14.653
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-08-28 22:40:02.985 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-28 22:40:15.904
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-28 22:40:15.906
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-28 22:40:20.172
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:40:54.680
+!MESSAGE Indexed 'swtimer' (43 sources, 150 headers) in 3.08 sec: 17,361 declarations; 98,751 references; 1 unresolved inclusions; 93 syntax errors; 243 unresolved names (0.21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:41:00.986
+!MESSAGE Indexed 'swtimer' (43 sources, 150 headers) in 2.42 sec: 17,361 declarations; 98,751 references; 1 unresolved inclusions; 93 syntax errors; 243 unresolved names (0.21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:42:52.740
+!MESSAGE Indexed 'swtimer' (43 sources, 206 headers) in 2.37 sec: 20,858 declarations; 107,829 references; 1 unresolved inclusions; 93 syntax errors; 241 unresolved names (0.19%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:44:38.405
+!MESSAGE Indexed 'swtimer' (43 sources, 148 headers) in 1.79 sec: 17,219 declarations; 98,614 references; 1 unresolved inclusions; 93 syntax errors; 243 unresolved names (0.21%)
+!SESSION 2024-08-28 22:44:47.171 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-28 22:44:52.024
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-28 22:44:52.025
+!MESSAGE Log4j2 initialized with config file C:\Users\ki170\Desktop\stm32workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-28 22:44:56.662
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:48:03.380
+!MESSAGE Indexed 'swtimer' (43 sources, 206 headers) in 3.99 sec: 20,858 declarations; 107,829 references; 1 unresolved inclusions; 93 syntax errors; 241 unresolved names (0.19%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:48:52.913
+!MESSAGE Indexed 'swtimer' (43 sources, 206 headers) in 2.66 sec: 20,858 declarations; 107,829 references; 1 unresolved inclusions; 93 syntax errors; 241 unresolved names (0.19%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:49:38.446
+!MESSAGE Indexed 'swtimer' (43 sources, 117 headers) in 1.48 sec: 10,980 declarations; 79,410 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0022%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:49:53.535
+!MESSAGE Indexed 'swtimer' (43 sources, 117 headers) in 1.45 sec: 10,980 declarations; 79,410 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0022%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-28 22:50:37.020
+!MESSAGE Indexed 'swtimer' (43 sources, 150 headers) in 1.98 sec: 17,361 declarations; 98,751 references; 1 unresolved inclusions; 93 syntax errors; 243 unresolved names (0.21%)

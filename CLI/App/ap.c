@@ -42,16 +42,47 @@ void infoCli(uint8_t argc , const char **argv)
 {
   bool ret = false ;
 
-  if(argc == 1 && strcmp(argv[0],"test") == 0 )
+  if(argc == 1 && cliIsStr(argv[0],"test"))
     {
       cliPrintf("infoCli run\n"); // 인자까지 정상이면 정상작동
       ret = true ;
     }
 
 
+  if(argc == 2  && cliIsStr (argv[0], "print"))
+    {
+      uint8_t count ;
+      count = (uint8_t)cliGetData(argv[1]);
+      for(int i = 0 ; i < count ; i++)
+	{
+	  cliPrintf("print %d / %d\n " , i +1 , count);
+	}
+
+      ret = true;
+    }
+
+  if(argc == 1 && cliIsStr(argv[0], "adc"))
+    {
+      uint32_t data ;
+      while(cliKeepLoop())
+	{
+	      data = adcReadVoltage(_DEF_CH1);
+	      cliPrintf("adc_voltage : %d\n",data );
+	      delay(100);
+	}
+      ret = true;
+    }
+
+
+
+
+
+
   if (ret == false)
     {
       cliPrintf("write -> info test\n");
+      cliPrintf("write -> info print 0~10\n");
+      cliPrintf("write -> info adc\n");
     }
 }
 
